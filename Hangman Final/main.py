@@ -17,7 +17,7 @@ for _ in range(word_length):
 while not game_is_finished:
     guess = input("Guess a letter: ").lower()
 
-    #Use the clear() function imported from replit to clear the output between guesses.
+    #replit not working in code, use os import to clear console
     clear()
 
     if guess in display:
@@ -35,7 +35,7 @@ while not game_is_finished:
         if lives == 0:
             game_is_finished = True
             print("You lose.")
-    
+
     if not "_" in display:
         game_is_finished = True
         print("You win.")
